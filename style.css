@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+Bright-orange: hsl(31, 77%, 52%);
+Dark-cyan: hsl(184, 100%, 22%);
+Very-darkcyan: hsl(179, 100%, 13%);
+
+Transparent-white: hsla(0, 0%, 100%, 0.75);
+Very-lightgray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+.container {
+   padding: 20px;
+
+    
+}
+
+.first-card, .second-card, .third-card {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container img {
+    height: 35px;
+    width: 52px;
+}
+
+.container button {
+    
+    width: 140px;
+    height: 45px;
+    border-radius: 8rem;
+    
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid hsla(0, 0%, 100%, 0.144);
+}
+
+.first-card button {
+    color: hsl(31, 77%, 52%)
+}
+
+.second-card button {
+    color: hsl(184, 100%, 22%)
+}
+
+.third-card button {
+    color:hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+}
+
+.first-card {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-card {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.container p {
+    font-size: 15px;
+    color:hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container h1 {
+    font-size: 28px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-card, .second-card, .third-card {
+        width: 280px;
+    }
+
+    .container button {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .first-card, .second-card, .third-card {
+        width: 310px;
+        padding: 3rem;
+    }
+}
